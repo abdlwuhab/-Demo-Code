@@ -94,6 +94,7 @@ function updateBackground(value) {
   mainContainer.style.backgroundColor = colorMap[value] || '#f3e7dc';
 }
 
+
 // بيانات العطور حسب التفضيل (كمثال، يمكن تعديلها لاحقًا)
 const perfumes = [
   {
