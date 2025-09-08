@@ -1,52 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=
-  
-  
-  , initial-scale=1.0">
-  <title>مستشاره العطور الذكيه</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مستشارة العطور الذكية</title>
   <link rel="stylesheet" href="stely.css">
 </head>
 <body>
   
-<link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" /> </head> <body> <header> <div class="container"> <h1 class="logo">عبير الخلود</h1> <nav> <ul class="nav-links"> <li><a href="#home" class="nav-link">الرئيسية</a></li> <li><a href="#products" class="nav-link">منتجاتنا</a></li> <li><a href="#about" class="nav-link">عن المتجر</a></li> <li><a href="#contact" class="nav-link">تواصل معنا</a></li> </ul> </nav> </div> </header> <section id="home" class="hero-section"> <div class="container hero-content"> <h2>عطور فاخرة تلامس الحواس</h2> <p>اختبر فخامة الروائح المصممة خصيصاً لك</p> <a href="#products" class="btn btn-primary animate-btn">تسوق الآن</a> </div> </section> <section id="products" class="products-section container"> <h2 class="section-title">منتجاتنا</h2> <div class="products-grid"> <!-- منتج عطر 1 --> <div class="product-card animate-fade"> <img src="نوتات عطريه.jpeg" alt="عطر زهري" /> <h3>اكتشف عطرك</h3> <p>رائحة راقية وناعمة تناسب النهار والمناسبات الخاصة.</p> <button class="btn btn-buy" data-product="عطر زهري">اختر هذا العطر</button> </div>
-text
+  <!-- 🔹 Navbar -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">✨ عبير الخلود</h1>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+          <li><a href="#products" class="nav-link">منتجاتنا</a></li>
+          <li><a href="#about" class="nav-link">عن المتجر</a></li>
+          <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+      </nav>
+    </div>
+  </header>
 
- <!DOCTYPE html> <html lang="ar" dir="rtl"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1" /> <title>متجر عبير الخلود - عطور فاخرة</title> <link rel="stylesheet" href="styles.css" /> <script defer src="script.js"></script> <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet" /> </head> <body> <header> <div class="container"> <h1 class="logo">عبير الخلود</h1> <nav> <ul class="nav-links"> <li><a href="#home" class="nav-link">الرئيسية</a></li> <li><a href="#products" class="nav-link">منتجاتنا</a></li> <li><a href="#about" class="nav-link">عن المتجر</a></li> <li><a href="#contact" class="nav-link">تواصل معنا</a></li> </ul> </nav> </div> </header> <section id="home" class="hero-section"> <div class="container hero-content"> <h2>عطور فاخرة تلامس الحواس</h2> <p>اختبر فخامة الروائح المصممة خصيصاً لك</p> <a href="#products" class="btn btn-primary animate-btn">تسوق الآن</a> </div> </section> <section id="products" class="products-section container"> <h2 class="section-title">منتجاتنا</h2> <div class="products-grid"> <!-- منتج عطر 1 --> <div class="product-card animate-fade"> <img src="زهور.jpeg" alt="عطر زهري" /> <h3>عطر زهري</h3> <p>رائحة راقية وناعمة تناسب النهار والمناسبات الخاصة.</p> <button class="btn btn-buy" data-product="عطر زهري">اختر هذا العطر</button> </div>
-    <!-- منتج عطر 2 -->
-  <div class="product-card animate-fade">
-    <img src="اخشاب.jpeg" alt="عطر خشبي" />
-    <h3>عطر خشبي</h3>
-    <p>عبير دافئ يناسب الليل وأوقات الشتاء الباردة.</p>
-    <button class="btn btn-buy" data-product="عطر خشبي">اختر هذا العطر</button>
-  </div>
-<div class="product-card animate-fade">
-    <img src="فواكه.jpeg" alt="فواكه" />
-    <h3>عطر فواكه فاخرة</h3>
-    <p>عبير دافئ يناسب الليل وأوقات الشتاء الباردة.</p>
-    <button class="btn btn-buy" data-product="عطر خشبي">اختر هذا العطر</button
-  
-</div>
-</section> <section id="about" class="about-section container"> <h2 class="section-title">عن عبير الخلود</h2> <p> متجر عطور فاخرة يقدم أجود أنواع العطور المختارة بعناية لتلبي جميع الأذواق والمناسبات، مع خدمة عملاء مميزة وتجربة شراء فريدة. </p> </section> <section id="contact" class="contact-section container"> <h2 class="section-title">تواصل معنا</h2> <form id="contact-form"> <label for="name">الاسم:</label> <input type="text" id="name" name="name" required /> <label for="email">البريد الإلكتروني:</label> <input type="email" id="email" name="email" required /> <label for="message">رسالتك:</label> <textarea id="message" name="message" rows="4" required></textarea> <button type="submit" class="btn btn-primary">إرسال</button> </form> </section> <!-- نموذج اختيار تفاصيل العطر --> <div id="perfume-modal" class="modal hidden"> <div class="modal-content animate-modal"> <span class="close-btn" id="modal-close">&times;</span> <h3>تفاصيل الاستخدام للعطر: <span id="selected-product"></span></h3> <form id="perfume-form"> <label>اختر نوع الاستخدام:</label> <select id="usage-type" required> <option value="">--اختر--</option> <option value="نهار">نهار</option> <option value="ليل">ليل</option> <option value="مناسبات خاصة">مناسبات خاصة</option> </select>
-    <label for="season-type">اختر الموسم:</label>
-    <select id="season-type" required>
-      <option value="">--اختر--</option>
-      <option value="صيفي">صيفي</option>
-      <option value="شتوي">شتوي</option>
-    </select>
+  <!-- 🔹 Home -->
+  <section id="home" class="hero-section">
+    <div class="container hero-content fade-in">
+      <h2>عطور فاخرة تلامس الحواس</h2>
+      <p>اختبر فخامة الروائح المصممة خصيصاً لك</p>
+      <img src="" alt="">
+      <a href="#products" class="btn btn-primary">تسوق الآن</a>
+    </div>
+  </section>
 
-    <button type="submit" class="btn btn-primary">إتمام الشراء</button>
+  <!-- 🔹 Products -->
+  <section id="products" class="products-section">
+    <h2 class="section-title">منتجاتنا</h2>
+    <div class="products-grid">
+
+      <div class="product-card slide-up">
+        <img src="اخشاب.jpeg" alt="عطر خشبي" />
+        <h3>عطر خشبي</h3>
+        <p>عبير دافئ يناسب الليل وأوقات الشتاء الباردة.</p>
+        <button class="btn btn-buy" data-product="عطر خشبي">اختر هذا العطر</button>
+      </div>
+
+      <div class="product-card slide-up">
+        <img src="فواكه.jpeg" alt="عطر فواكه" />
+        <h3>عطر فواكه فاخرة</h3>
+        <p>مزيج حلو ومنعش يناسب الأوقات النهارية.</p>
+        <button class="btn btn-buy" data-product="عطر فواكه">اختر هذا العطر</button>
+      </div>
+
+      <div class="product-card slide-up">
+        <img src="زهور.jpeg" alt="عطر العود" />
+        <h3>عطر العود الملكي</h3>
+        <p>فخامة شرقية أصيلة برائحة العود الفاخر.</p>
+        <button class="btn btn-buy" data-product="عطر العود">اختر هذا العطر</button>
+      </div>
+
+      <div class="product-card slide-up">
+        <img src="مسك.jpg" alt="عطر المسك" />
+        <h3>عطر المسك الأبيض</h3>
+        <p>رائحة ناعمة تمنحك إحساساً بالنقاء والهدوء.</p>
+        <button class="btn btn-buy" data-product="عطر المسك">اختر هذا العطر</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 About -->
+  <section id="about" class="about-section fade-in">
+    <h2 class="section-title">عن عبير الخلود</h2>
+    <p>
+      متجر عطور فاخرة يقدم أجود أنواع العطور المختارة بعناية لتلبي جميع الأذواق والمناسبات،
+      مع خدمة عملاء مميزة وتجربة شراء فريدة.
+    </p>
+  </section>
+
+  <!-- 🔹 Contact -->
+  <!-- قسم تواصل معنا -->
+<section id="contact" class="contact-section container">
+  <h2 class="section-title">تواصل معنا</h2>
+  <p class="contact-intro">نحن هنا لمساعدتك والإجابة عن استفساراتك بكل سرور.</p>
+
+  <form id="contact-form" class="contact-form">
+    <div class="form-group">
+      <label for="name">الاسم الكامل</label>
+      <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">البريد الإلكتروني</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">العنوان</label>
+      <input type="text" id="address" name="address" placeholder="اكتب عنوانك الكامل" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">إرسال</button>
   </form>
-</div>
+</section>
 
 
+  <!-- 🔹 Modal -->
+  <div id="perfume-modal" class="modal hidden">
+    <div class="modal-content animate-modal">
+      <span class="close-btn" id="modal-close">&times;</span>
+      <h3>تفاصيل الاستخدام للعطر: <span id="selected-product"></span></h3>
+      <form id="perfume-form">
+        <label>اختر نوع الاستخدام:</label>
+        <select id="usage-type" required>
+          <option value="">--اختر--</option>
+          <option value="نهار">نهار</option>
+          <option value="ليل">ليل</option>
+          <option value="مناسبات خاصة">مناسبات خاصة</option>
+        </select>
 
+        <label>اختر الموسم:</label>
+        <select id="season-type" required>
+          <option value="">--اختر--</option>
+          <option value="صيفي">صيفي</option>
+          <option value="شتوي">شتوي</option>
+        </select>
 
+        <label>ذوقك المفضل:</label>
+        <select id="style-type" required>
+          <option value="">--اختر--</option>
+          <option value="زهري">زهري</option>
+          <option value="خشبي">خشبي</option>
+          <option value="شرقي">شرقي</option>
+          <option value="فواكه">فواكه</option>
+        </select>
 
+        <label>تقييمك (1-5):</label>
+        <input type="number" id="rating" min="1" max="5" required />
 
-
+        <button type="submit" class="btn btn-primary">إتمام الشراء</button>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

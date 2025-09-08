@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener("DOMContentLoaded", () => {
   const buyButtons = document.querySelectorAll(".btn-buy");
   const modal = document.getElementById("perfume-modal");
@@ -9,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let selectedProduct = "";
 
-  // فتح المودال عند اختيار العطر
+  // فتح المودال
   buyButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       selectedProduct = btn.getAttribute("data-product");
@@ -19,41 +17,50 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // إغلاق المودال
+  // إغلاق
   modalCloseBtn.addEventListener("click", () => {
     modal.classList.add("hidden");
   });
 
-  // عند إرسال نموذج تفاصيل الاستخدام
+  // عند الإرسال
   perfumeForm.addEventListener("submit", (e) => {
     e.preventDefault();
-
     const usageType = document.getElementById("usage-type").value;
     const seasonType = document.getElementById("season-type").value;
+    const styleType = document.getElementById("style-type").value;
+    const rating = document.getElementById("rating").value;
 
-    if (!usageType || !seasonType) {
-      alert("يرجى اختيار نوع الاستخدام والموسم لإتمام الشراء.");
+    if (!usageType || !seasonType || !styleType || !rating) {
+      alert("يرجى إكمال جميع الحقول.");
       return;
     }
 
-    // هنا يمكن إضافة عملية الشراء الفعلية أو الانتقال لصفحة الدفع
     alert(
-      `تم اختيار:\nالعطر: ${selectedProduct}\nنوع الاستخدام: ${usageType}\nالموسم: ${seasonType}\nشكراً لشراءك من عبير الخلود!`
+      `✅ تم الاختيار:\nالعطر: ${selectedProduct}\nالاستخدام: ${usageType}\nالموسم: ${seasonType}\nالذوق: ${styleType}\nالتقييم: ${rating}/5`
     );
 
     modal.classList.add("hidden");
   });
 
-  // إضافة نشاط للروابط في الشريط التنقل
-  const navLinks = document.querySelectorAll(".nav-link");
-  navLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      navLinks.forEach((lnk) => lnk.classList.remove("active"));
-      e.target.classList.add("active");
+  // تفعيل زر القائمة
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+
+  // تغيير النشط
+  const links = document.querySelectorAll(".nav-link");
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      links.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+      navLinks.classList.remove("show");
     });
   });
 
-  // إغلاق المودال عند الضغط خارج المحتوى
+  // إغلاق المودال عند الضغط بالخارج
   window.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.add("hidden");
