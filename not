@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>مستشارة العطور الذكية - عبير الخلود</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="stely.css" />
+</head>
+<body>
+
+  <!-- ====== HEADER / NAV ====== -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">✨ عبير الخلود</h1>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+          <li><a href="#products" class="nav-link">منتجاتنا</a></li>
+          <li><a href="#offers" class="nav-link">العروض</a></li>
+          <li><a href="#testimonials" class="nav-link">آراء العملاء</a></li>
+          <li><a href="#about" class="nav-link">عن المتجر</a></li>
+          <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+          <li><a href="#checkout" class="nav-link">الشراء</a></li>
+<a href="#cart" class="cart-link">
+  <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" 
+       width="26" height="26" viewBox="0 0 24 24" fill="none" 
+       stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+       stroke-linejoin="round">
+    <circle cx="9" cy="21" r="1"></circle>
+    <circle cx="20" cy="21" r="1"></circle>
+    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+  </svg>
+</a>
+
+</a>
+
+        </ul>
+
+        <!-- زر قائمة الموبايل -->
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====== HERO ====== -->
+  <section id="home" class="hero-section">
+    <div class="container hero-content fade-in">
+      <h2>عطور فاخرة تلامس الحواس</h2>
+      <p>اختبر فخامة الروائح المصممة خصيصاً لك</p>
+      <!-- ضع هنا GIF/MP4 خلفية إن أردت -->
+      <a href="#products" class="btn btn-primary">تسوق الآن</a>
+    </div>
+  </section>
+
+  <!-- ====== PRODUCTS ====== -->
+  <section id="products" class="products-section">
+    <h2 class="section-title">منتجاتنا</h2>
+    <div class="products-grid">
+      <!-- أمثلة منتجات ثابتة (يمكنك تغيير الصور/النصوص) -->
+      <div class="product-card slide-up">
+        <img src="اخشاب.jpeg" alt="عطر خشبي" />
+        <h3>عطر خشبي</h3>
+        <p>عبير دافئ يناسب الليل وأوقات الشتاء الباردة.</p>
+        <button class="btn btn-buy" data-product="عطر خشبي">اختر هذا العطر</button>
+      </div>
+
+      <div class="product-card slide-up">
+        <img src="فواكه.jpeg" alt="عطر فواكه" />
+        <h3>عطر فواكه فاخرة</h3>
+        <p>مزيج حلو ومنعش يناسب الأوقات النهارية.</p>
+        <button class="btn btn-buy" data-product="عطر فواكه">اختر هذا العطر</button>
+      </div>
+
+      <div class="product-card slide-up">
+        <img src="زهور.jpeg" alt="عطر العود" />
+        <h3>عطر العود الملكي</h3>
+        <p>فخامة شرقية أصيلة برائحة العود الفاخر.</p>
+        <button class="btn btn-buy" data-product="عطر العود">اختر هذا العطر</button>
+      </div>
+
+      <div class="product-card slide-up">
+        <img src="مسك.jpg" alt="عطر المسك" />
+        <h3>عطر المسك الأبيض</h3>
+        <p>رائحة ناعمة تمنحك إحساساً بالنقاء والهدوء.</p>
+       <a href="musk.html" class="btn btn-buy">اختر هذا العطر</a>
+
+
+      </div>
+       <div class="product-card slide-up">
+        <img src="زهور.jpeg" alt="عطر الورد" />
+        <h3>عطر الورد الملكي</h3>
+        <p>فخامة شرقية أصيلة برائحة العود الفاخر.</p>
+        <button class="btn btn-buy" data-product="عطر الورد">اختر هذا العطر</button>
+      </div>
+      <div class="product-card slide-up">
+        <img src="زهور.jpeg" alt="عطر الفانليا" />
+        <h3>عطر الفانليا الفاخر</h3>
+        <p>فخامة شرقية أصيلة برائحة العود الفاخر.</p>
+        <button class="btn btn-buy" data-product="عطر الفانليا">اختر هذا العطر</button>
+      </div>
+       <div class="product-card slide-up">
+        <img src="زهور.jpeg" alt="عطر العنبر" />
+        <h3>عطر العنبر المميز</h3>
+        <p>فخامة شرقية أصيلة برائحة العود الفاخر.</p>
+        <button class="btn btn-buy" data-product="عطر العنبر">اختر هذا العطر</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TESTIMONIALS ====== -->
+  <section id="testimonials" class="testimonials-section">
+    <h2 class="section-title">آراء عملائنا</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <p>"عطر عبير الخلود غيّر يومي! فخامة وجودة عالية."</p>
+        <h4>- أحمد محمد</h4>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <p>"أفضل متجر عطور تعاملت معه، خدمة راقية وسرعة في التوصيل."</p>
+        <h4>- سارة علي</h4>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <p>"العود الملكي مذهل! أنصح الجميع بتجربته."</p>
+        <h4>- خالد يوسف</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== OFFERS ====== -->
+  <section id="offers" class="offers-section">
+    <h2 class="section-title">عروض خاصة</h2>
+    <div class="offers-grid">
+      <div class="offer-card slide-up">
+        <h3>عرض الصيف 🌸</h3>
+        <p>خصم 30% على جميع العطور الزهرية.</p>
+        <button class="btn btn-primary">تسوق الآن</button>
+      </div>
+
+      <div class="offer-card slide-up">
+        <h3>عرض محدود ⏳</h3>
+        <p>اشتري 2 واحصل على الثالث مجاناً.</p>
+        <button class="btn btn-primary">استفد من العرض</button>
+      </div>
+
+      <div class="offer-card slide-up">
+        <h3>عرض العود الفاخر 🌙</h3>
+        <p>خصم 20% على العود الملكي لفترة محدودة.</p>
+        <button class="btn btn-primary">اطلب الآن</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section id="about" class="about-section fade-in">
+    <h2 class="section-title">عن عبير الخلود</h2>
+    <p>
+      متجر عطور فاخرة يقدم أجود أنواع العطور المختارة بعناية لتلبي جميع الأذواق والمناسبات،
+      مع خدمة عملاء مميزة وتجربة شراء فريدة.
+    </p>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info fade-in-left">
+      <h2 class="section-title">تواصل معنا</h2>
+      <p>نحن هنا دائمًا من أجلك ✨ شاركنا استفسارك وسنرد عليك في أسرع وقت.</p>
+      <ul>
+        <li>📍 العنوان: القاهرة – مصر</li>
+        <li>📞 الهاتف: 010224475512</li>
+        <li>📧 البريد: info@abeer.com</li>
+      </ul>
+    </div>
+
+    <div class="contact-form fade-in-right">
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="✍️ اسمك الكامل" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="📧 بريدك الإلكتروني" required>
+        </div>
+        <div class="form-group">
+          <textarea rows="5" placeholder="💬 اكتب رسالتك هنا..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">📨 إرسال الرسالة</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ====== CHECKOUT (الاستبيان قبل الإضافة للسلة) ====== -->
+  <section id="checkout" class="checkout-section">
+    <h2>مرحلة الشراء</h2>
+    <p>اختر إعداداتك قبل إتمام عملية الشراء ✨</p>
+
+    <form id="checkout-form">
+      <div class="checkout-question fade-in">
+        <label>متى ستستخدم العطر؟</label>
+        <select name="time" required>
+          <option value="day">نهاراً</option>
+          <option value="night">ليلاً</option>
+          <option value="special">مناسبة خاصة</option>
+        </select>
+      </div>
+
+      <div class="checkout-question fade-in">
+        <label>ما هو ذوقك المفضل؟</label>
+        <select name="style" required>
+          <option value="classic">كلاسيكي</option>
+          <option value="modern">حديث</option>
+          <option value="luxury">فاخر</option>
+        </select>
+      </div>
+
+      <div class="checkout-question fade-in">
+        <label>ما تقييمك للتجربة حتى الآن؟</label>
+        <input type="range" name="rating" min="1" max="10" value="5" />
+      </div>
+
+      <button type="submit" class="checkout-btn">إتمام الشراء</button>
+    </form>
+
+    <div id="checkout-result" class="checkout-result"></div>
+  </section>
+
+  <!-- ====== CART ====== -->
+  <section id="cart" class="cart-section">
+    <h2>🛒 سلة المشتريات</h2>
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-actions">
+      <button id="clear-cart" class="btn-clear">🗑️ إفراغ السلة</button>
+      <button id="checkout-pay" class="btn-pay">💳 إتمام الدفع</button>
+    </div>
+  </section>
+
+  <!-- ====== MODAL: استمارة المنتج (تظهر لما يضغط على "اختر هذا العطر") ====== -->
+  <div id="perfume-modal" class="modal hidden">
+    <div class="modal-content animate-modal">
+      <span class="close-btn" id="modal-close">&times;</span>
+      <h3>تفاصيل الاستخدام للعطر: <span id="selected-product">---</span></h3>
+      <form id="perfume-form">
+        <label>اختر نوع الاستخدام:</label>
+        <select id="usage-type" required>
+          <option value="">--اختر--</option>
+          <option value="نهار">نهار</option>
+          <option value="ليل">ليل</option>
+          <option value="مناسبة خاصة">مناسبة خاصة</option>
+        </select>
+
+        <label>اختر الموسم:</label>
+        <select id="season-type" required>
+          <option value="">--اختر--</option>
+          <option value="صيفي">صيفي</option>
+          <option value="شتوي">شتوي</option>
+        </select>
+
+        <label>ذوقك المفضل:</label>
+        <select id="style-type" required>
+          <option value="">--اختر--</option>
+          <option value="زهري">زهري</option>
+          <option value="خشبي">خشبي</option>
+          <option value="شرقي">شرقي</option>
+          <option value="فواكه">فواكه</option>
+        </select>
+
+        <label>تقييمك (1-5):</label>
+        <input type="number" id="rating" min="1" max="5" required />
+
+        <button type="submit" class="btn btn-primary">إضافة إلى السلة</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====== PAYMENT MODAL ====== -->
+  <div id="payment-modal" class="payment-modal">
+    <div class="payment-content">
+      <h3>اختر طريقة الدفع</h3>
+      <form id="payment-form">
+        <label><input type="radio" name="payment" value="credit" checked> بطاقة بنكية</label><br>
+        <label><input type="radio" name="payment" value="paypal"> PayPal</label><br>
+        <label><input type="radio" name="payment" value="cash"> عند الاستلام</label><br>
+        <button type="submit" class="btn-confirm">تأكيد الدفع</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====== THANK YOU ====== -->
+  <div id="thank-you" class="thank-you" style="display: none;">
+    <h2>🎉 شكراً لثقتك بمتجر عبير الخلود!</h2>
+    <p>نتمنى أن تنال عطورتنا إعجابك وترافقك في أجمل لحظاتك ✨</p>
+  </div>
+  <!-- 🌟 Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- 👑 لوجو + وصف -->
+    <div class="footer-about fade-in-up">
+      <h2 class="logo">عبير الخلود</h2>
+      <p>
+        متجر العطور الأول الذي يجمع بين الفخامة والذوق الرفيع ✨  
+        استمتع بعطورنا المختارة بعناية لترافقك في كل لحظة.
+      </p>
+    </div>
+
+    <!-- 🔗 روابط سريعة -->
+    <div class="footer-links fade-in-up">
+      <h3>روابط سريعة</h3>
+      <ul>
+        <li><a href="#home">🏠 الرئيسية</a></li>
+        <li><a href="#products">🛍️ منتجاتنا</a></li>
+        <li><a href="#offers">🔥 العروض</a></li>
+        <li><a href="#contact">📩 تواصل معنا</a></li>
+      </ul>
+    </div>
+
+    <!-- 📞 تواصل -->
+    <div class="footer-contact fade-in-up">
+      <h3>تواصل معنا</h3>
+      <p>📍 القاهرة – مصر</p>
+      <p>📞 010224475512</p>
+      <p>📧 info@abeer.com</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- حقوق -->
+  <div class="footer-bottom">
+    <p>© 2025 عبير الخلود. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+ززززززززززززززز
+/* ========= Reset & Base ========= */
+* { margin:0; padding:0; box-sizing:border-box; font-family:"Cairo", sans-serif; }
+body {
+  direction: rtl;
+  text-align: right;
+  background:#fafafa;
+  color:#333;
+  line-height:1.6;
+}
+
+/* ===== Container ===== */
+.container { width:90%; max-width:1200px; margin:auto; }
+
+/* ===== Header / Nav ===== */
+header {
+  background: linear-gradient(90deg,#f6b26b,#e87aa6,#b77ff5);
+  box-shadow:0 3px 10px rgba(0,0,0,0.12);
+  position:sticky; top:0; z-index:1000;
+}
+/* ===== Sub Header (للصفحات الداخلية) ===== */
+.sub-header {
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.sub-header nav {
+  display: flex;
+  gap: 15px;
+}
+
+.icon-btn {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1) rotate(-2deg);
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+.nav-container { display:flex; justify-content:space-between; align-items:center; padding:14px 0; width:90%; margin:auto; }
+.logo { color:#fff; font-size:22px; font-weight:700; }
+.nav-links { list-style:none; display:flex; gap:22px; align-items:center; }
+.nav-links li a { color:#fff; text-decoration:none; font-size:16px; padding:6px 8px; transition:0.25s; }
+.nav-links li a.active, .nav-links li a:hover { color:#222; font-weight:600; }
+.menu-toggle { display:none; font-size:26px; color:#fff; cursor:pointer; }
+
+/* ===== Hero ===== */
+.hero-section {
+  height:78vh;
+  display:flex; align-items:center; justify-content:center;
+ background:linear-gradient(135deg,#0a58cd,#0bd849);
+  position: relative;
+  text-align: center;
+  padding: 120px 20px;
+  color: gold;
+}
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.hero-content { position:relative; z-index:2; }
+.hero-content h2 { font-size:36px; margin-bottom:12px; color:#afd30c; }
+.hero-content p { font-size:18px; margin-bottom:18px; color:#e70e2e; }
+
+/* buttons */
+.btn { display:inline-block; padding:10px 22px; border-radius:10px; cursor:pointer; text-decoration:none; color:#fff; border:none; }
+.btn-primary { background:#a77ff5; }
+.btn-primary:hover { background:#fff; color:#a77ff5; }
+
+/* ===== Products ===== */
+.products-section { padding:60px 0; background:#fff; }
+.section-title { text-align:center; font-size:28px; margin-bottom:28px; color:#333; }
+.products-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap:22px;
+  width:90%; max-width:1200px; margin:0 auto;
+}
+.product-card {
+  padding:18px; border-radius:14px; box-shadow:0 6px 20px rgba(0,0,0,0.06);
+  text-align:center; transition: transform .28s ease, box-shadow .28s ease;
+}
+.product-card img { width:100%; height:160px; object-fit:cover; border-radius:10px; margin-bottom:12px; }
+.product-card h3 { margin-bottom:8px; font-size:18px; }
+.product-card p { font-size:14px; margin-bottom:12px; }
+.product-card:hover { transform:translateY(-8px); box-shadow:0 12px 30px rgba(0,0,0,0.12); }
+
+/* ===== Testimonials ===== */
+.testimonials-section { padding:70px 0; background:linear-gradient(135deg,#fff,#fff7f7); }
+.testimonials-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:20px; width:90%; margin:0 auto; }
+.testimonial-card { background:#fff; padding:18px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+
+/* ===== Offers ===== */
+.offers-section { padding:70px 0; background:linear-gradient(135deg,#fffaf1,#fff1f3); }
+.offers-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:22px; width:90%; margin:0 auto; }
+.offer-card { background:#fff; padding:18px; border-radius:14px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+
+/* ===== About ===== */
+.about-section { padding:60px 10%; background:linear-gradient(180deg,#fff3cd,#fff); border-radius:12px; margin:40px auto; }
+
+/* ===== Contact ===== */
+.contact-section {
+  background: linear-gradient(135deg, #f9f9f9, #f1f1f1);
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.contact-section::before {
+  content: "";
+  position: absolute; top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle, rgba(255,182,193,0.3), transparent 70%);
+  animation: pulseBG 10s infinite;
+}
+@keyframes pulseBG { 0%{transform:scale(1);opacity:0.6;}50%{transform:scale(1.2);opacity:0.3;}100%{transform:scale(1);opacity:0.6;} }
+.contact-container { display:flex; flex-wrap:wrap; justify-content:center; gap:40px; position:relative; z-index:1; }
+.contact-form { background:#fff; padding:30px; border-radius:15px; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition:.3s; }
+.contact-form:hover { transform:translateY(-5px); }
+
+/* ===== Cart ===== */
+.cart-section { padding:40px 20px; margin:30px auto; max-width:920px; border-radius:14px; background:linear-gradient(180deg,#fff,#f7f0ff); }
+.cart-item { display:flex; justify-content:space-between; padding:10px; border-bottom:1px solid #eee; }
+
+/* ===== Footer ===== */
+.footer {
+  background: linear-gradient(135deg, #5a3d9e, #a77ff5);
+  color: #fff; padding: 60px 20px 30px; position: relative;
+}
+.footer-container { display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:30px; max-width:1200px; margin:auto; }
+.footer h2.logo { font-size:1.8rem; margin-bottom:15px; }
+.footer-links ul { list-style:none; padding:0; }
+.footer-links ul li { margin-bottom:10px; }
+.footer-links ul li a { color:#fff; text-decoration:none; }
+.footer-bottom { text-align:center; margin-top:30px; font-size:0.9rem; border-top:1px solid rgba(255,255,255,0.3); padding-top:15px; }
+
+/* -------------------------
+   🎨 Product Theme Colors
+-------------------------- */
+
+/* Musk */
+body.musk-page { background: linear-gradient(135deg,#e0f7fa,#ffffff); color:#004d66; }
+.product-card.musk { background:linear-gradient(135deg,#ffffffaa,#ace0f9cc); border:2px solid #80d0f4; }
+.product-card.musk h3 { color:#005f99; }
+.product-card.musk .btn { background:linear-gradient(135deg,#36d1dc,#5b86e5); }
+
+/* Oud */
+body.oud-page { background: linear-gradient(135deg,#2e004f,#5e3370); color:#f1e5ff; }
+.product-card.oud { background:linear-gradient(135deg,#654ea3cc,#eaafc8cc); border:2px solid #a97acc; }
+.product-card.oud h3 { color:#3c1361; }
+.product-card.oud .btn { background:linear-gradient(135deg,#cc2b5e,#753a88); }
+
+/* Rose */
+body.rose-page { background: linear-gradient(135deg,#fff0f5,#ffe6eb); color:#800040; }
+.product-card.rose { background:linear-gradient(135deg,#ff9a9ecc,#fad0c4cc); border:2px solid #ff7c9d; }
+.product-card.rose h3 { color:#b2004c; }
+.product-card.rose .btn { background:linear-gradient(135deg,#ff6a88,#ff99ac); }
+
+/* Vanilla */
+body.vanilla-page { background: linear-gradient(135deg,#fff8e1,#ffe0b2); color:#5c3d00; }
+.product-card.vanilla { background:linear-gradient(135deg,#f6d365cc,#fda085cc); border:2px solid #f2a65a; }
+.product-card.vanilla h3 { color:#8c4100; }
+.product-card.vanilla .btn { background:linear-gradient(135deg,#f7971e,#ffd200); }
+
+/* Amber */
+body.amber-page { background: linear-gradient(135deg,#fff3e0,#ffe0b2); color:#4e2600; }
+.product-card.amber { background:linear-gradient(135deg,#d1913ccc,#ffd194cc); border:2px solid #c27b19; }
+.product-card.amber h3 { color:#5a2e0e; }
+.product-card.amber .btn { background:linear-gradient(135deg,#f2994a,#f2c94c); }
+
+/* ===== Animations ===== */
+.fade-in { opacity:0; transform:translateY(30px); transition:.8s; }
+.fade-in.active { opacity:1; transform:translateY(0); }
+
+@media (max-width:768px) {
+  .nav-links { display:none; position:absolute; top:64px; right:0; left:0; background:#a77ff5; flex-direction:column; gap:12px; padding:16px; }
+  .nav-links.show { display:flex; }
+  .menu-toggle { display:block; }
+}

@@ -1,106 +1,93 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>مستشارة العطور الذكية - عبير الخلود</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عبير الخلود - متجر العطور</title>
+  <link rel="stylesheet" href="stely.css">
+  <!-- أيقونات Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <link rel="stylesheet" href="stely.css" />
 </head>
 <body>
 
-  <!-- ====== HEADER / NAV ====== -->
-  <header>
-    <div class="container nav-container">
-      <h1 class="logo">✨ عبير الخلود</h1>
-
+  <!-- 🔹 الهيدر -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">عبير الخلود</h1>
       <nav>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home" class="nav-link active">الرئيسية</a></li>
-          <li><a href="#products" class="nav-link">منتجاتنا</a></li>
-          <li><a href="#offers" class="nav-link">العروض</a></li>
-          <li><a href="#testimonials" class="nav-link">آراء العملاء</a></li>
-          <li><a href="#about" class="nav-link">عن المتجر</a></li>
-          <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
-          <li><a href="#checkout" class="nav-link">الشراء</a></li>
-          <li><a href="#cart" class="nav-link">السلة</a></li>
+        <ul class="nav-links">
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#products">منتجاتنا</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+          <li>
+            <a href="cart.html" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cart-count">0</span>
+            </a>
+          </li>
         </ul>
-
-        <!-- زر قائمة الموبايل -->
-        <div class="menu-toggle" id="menuToggle">&#9776;</div>
       </nav>
     </div>
   </header>
 
-  <!-- ====== HERO ====== -->
-  <section id="home" class="hero-section">
-    <div class="container hero-content fade-in">
-      <h2>عطور فاخرة تلامس الحواس</h2>
-      <p>اختبر فخامة الروائح المصممة خصيصاً لك</p>
-      <!-- ضع هنا GIF/MP4 خلفية إن أردت -->
+  <!-- 🔹 قسم البطل (Hero) -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>مرحبا بك في عالم عبير الخلود</h2>
+      <p>اكتشف تشكيلتنا الراقية من العطور الشرقية والعالمية</p>
       <a href="#products" class="btn btn-primary">تسوق الآن</a>
     </div>
   </section>
 
-  <!-- ====== PRODUCTS ====== -->
-  <section id="products" class="products-section">
+  <!-- 🔹 قسم المنتجات -->
+  <section id="products" class="products container">
     <h2 class="section-title">منتجاتنا</h2>
-    <div class="products-grid">
-      <!-- أمثلة منتجات ثابتة (يمكنك تغيير الصور/النصوص) -->
-      <div class="product-card slide-up">
-        <img src="اخشاب.jpeg" alt="عطر خشبي" />
-        <h3>عطر خشبي</h3>
-        <p>عبير دافئ يناسب الليل وأوقات الشتاء الباردة.</p>
-        <button class="btn btn-buy" data-product="عطر خشبي">اختر هذا العطر</button>
-      </div>
+    <div class="product-grid">
 
-      <div class="product-card slide-up">
-        <img src="فواكه.jpeg" alt="عطر فواكه" />
-        <h3>عطر فواكه فاخرة</h3>
-        <p>مزيج حلو ومنعش يناسب الأوقات النهارية.</p>
-        <button class="btn btn-buy" data-product="عطر فواكه">اختر هذا العطر</button>
-      </div>
-
-      <div class="product-card slide-up">
-        <img src="زهور.jpeg" alt="عطر العود" />
-        <h3>عطر العود الملكي</h3>
-        <p>فخامة شرقية أصيلة برائحة العود الفاخر.</p>
-        <button class="btn btn-buy" data-product="عطر العود">اختر هذا العطر</button>
-      </div>
-
+      <!-- مسك -->
       <div class="product-card slide-up">
         <img src="مسك.jpg" alt="عطر المسك" />
-        <h3>عطر المسك الأبيض</h3>
+        <h3>عطر المسك</h3>
         <p>رائحة ناعمة تمنحك إحساساً بالنقاء والهدوء.</p>
-        <button class="btn btn-buy" data-product="عطر المسك">اختر هذا العطر</button>
+        <button onclick="window.location.href='musk.html'" class="btn btn-buy">اختر هذا العطر</button>
       </div>
+
+      <!-- عطر الورد -->
+      <div class="product-card slide-up">
+        <img src="فواكه.jpeg" alt="عطر الورد" />
+        <h3>عطر الورد</h3>
+        <p>انتعاش الورد الطبيعي مع لمسة رومانسية فاخرة.</p>
+        <button onclick="window.location.href='rose.html'" class="btn btn-buy">اختر هذا العطر</button>
+      </div>
+
+      <!-- عطر العود -->
+      <div class="product-card slide-up">
+        <img src="اخشاب.jpeg" alt="عطر العود" />
+        <h3>عطر العود</h3>
+        <p>فخامة عربية أصيلة تمزج بين القوة والأناقة.</p>
+        <button onclick="window.location.href='oud.html'" class="btn btn-buy">اختر هذا العطر</button>
+      </div>
+
+      <!-- عطر الفانيليا -->
+      <div class="product-card slide-up">
+        <img src="زهور.jpeg" alt="عطر الفانيليا" />
+        <h3>عطر الفانيليا</h3>
+        <p>لمسة دافئة حلوة تزيد من جاذبيتك.</p>
+        <button onclick="window.location.href='vanilla.html'" class="btn btn-buy">اختر هذا العطر</button>
+      </div>
+
+      <!-- عطر العنبر -->
+      <div class="product-card slide-up">
+        <img src="مسك رجالى فاخر.jpeg" alt="عطر العنبر" />
+        <h3>عطر العنبر</h3>
+        <p>رائحة قوية وغامضة تناسب كل الأذواق.</p>
+        <button onclick="window.location.href='amber.html'" class="btn btn-buy">اختر هذا العطر</button>
+      </div>
+
     </div>
   </section>
-
-  <!-- ====== TESTIMONIALS ====== -->
-  <section id="testimonials" class="testimonials-section">
-    <h2 class="section-title">آراء عملائنا</h2>
-    <div class="testimonials-grid">
-      <div class="testimonial-card fade-in">
-        <p>"عطر عبير الخلود غيّر يومي! فخامة وجودة عالية."</p>
-        <h4>- أحمد محمد</h4>
-      </div>
-
-      <div class="testimonial-card fade-in">
-        <p>"أفضل متجر عطور تعاملت معه، خدمة راقية وسرعة في التوصيل."</p>
-        <h4>- سارة علي</h4>
-      </div>
-
-      <div class="testimonial-card fade-in">
-        <p>"العود الملكي مذهل! أنصح الجميع بتجربته."</p>
-        <h4>- خالد يوسف</h4>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== OFFERS ====== -->
+<!-- ====== OFFERS ====== -->
   <section id="offers" class="offers-section">
     <h2 class="section-title">عروض خاصة</h2>
     <div class="offers-grid">
@@ -123,194 +110,80 @@
       </div>
     </div>
   </section>
-
-  <!-- ====== ABOUT ====== -->
-  <section id="about" class="about-section fade-in">
-    <h2 class="section-title">عن عبير الخلود</h2>
+  <!-- 🔹 قسم من نحن -->
+  <section class="about">
+  <div class="container">
+    <h2>عن عبير الخلود</h2>
     <p>
-      متجر عطور فاخرة يقدم أجود أنواع العطور المختارة بعناية لتلبي جميع الأذواق والمناسبات،
-      مع خدمة عملاء مميزة وتجربة شراء فريدة.
+      نحن في "عبير الخلود" نقدم أجود أنواع العطور الشرقية والغربية،
+      مع لمسة فاخرة تناسب جميع الأذواق. مهمتنا هي أن نمنحك تجربة 
+      عطرية لا تُنسى تجمع بين الأصالة والفخامة.
     </p>
-  </section>
-
-  <!-- ====== CONTACT ====== -->
-<section id="contact" class="contact-section">
-  <div class="contact-container">
-    <div class="contact-info fade-in-left">
-      <h2 class="section-title">تواصل معنا</h2>
-      <p>نحن هنا دائمًا من أجلك ✨ شاركنا استفسارك وسنرد عليك في أسرع وقت.</p>
-      <ul>
-        <li>📍 العنوان: القاهرة – مصر</li>
-        <li>📞 الهاتف: 010224475512</li>
-        <li>📧 البريد: info@abeer.com</li>
-      </ul>
-    </div>
-
-    <div class="contact-form fade-in-right">
-      <form id="contact-form">
-        <div class="form-group">
-          <input type="text" placeholder="✍️ اسمك الكامل" required>
-        </div>
-        <div class="form-group">
-          <input type="email" placeholder="📧 بريدك الإلكتروني" required>
-        </div>
-        <div class="form-group">
-          <textarea rows="5" placeholder="💬 اكتب رسالتك هنا..." required></textarea>
-        </div>
-        <button type="submit" class="btn-submit">📨 إرسال الرسالة</button>
-      </form>
+    <div class="about-stats">
+      <div class="stat">
+        <h3>+10</h3>
+        <p>سنوات خبرة</p>
+      </div>
+      <div class="stat">
+        <h3>+5000</h3>
+        <p>عميل راضٍ</p>
+      </div>
+      <div class="stat">
+        <h3>+200</h3>
+        <p>منتج فاخر</p>
+      </div>
     </div>
   </div>
 </section>
 
 
-  <!-- ====== CHECKOUT (الاستبيان قبل الإضافة للسلة) ====== -->
-  <section id="checkout" class="checkout-section">
-    <h2>مرحلة الشراء</h2>
-    <p>اختر إعداداتك قبل إتمام عملية الشراء ✨</p>
-
-    <form id="checkout-form">
-      <div class="checkout-question fade-in">
-        <label>متى ستستخدم العطر؟</label>
-        <select name="time" required>
-          <option value="day">نهاراً</option>
-          <option value="night">ليلاً</option>
-          <option value="special">مناسبة خاصة</option>
-        </select>
-      </div>
-
-      <div class="checkout-question fade-in">
-        <label>ما هو ذوقك المفضل؟</label>
-        <select name="style" required>
-          <option value="classic">كلاسيكي</option>
-          <option value="modern">حديث</option>
-          <option value="luxury">فاخر</option>
-        </select>
-      </div>
-
-      <div class="checkout-question fade-in">
-        <label>ما تقييمك للتجربة حتى الآن؟</label>
-        <input type="range" name="rating" min="1" max="10" value="5" />
-      </div>
-
-      <button type="submit" class="checkout-btn">إتمام الشراء</button>
+  <!-- 🔹 قسم تواصل معنا -->
+  <section id="contact" class="contact container">
+    <h2 class="section-title">تواصل معنا</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="الاسم الكامل" required>
+      <input type="email" placeholder="البريد الإلكتروني" required>
+      <textarea placeholder="رسالتك" required></textarea>
+      <button type="submit" class="btn btn-primary">إرسال</button>
     </form>
-
-    <div id="checkout-result" class="checkout-result"></div>
   </section>
 
-  <!-- ====== CART ====== -->
-  <section id="cart" class="cart-section">
-    <h2>🛒 سلة المشتريات</h2>
-    <div id="cart-items" class="cart-items"></div>
-
-    <div class="cart-actions">
-      <button id="clear-cart" class="btn-clear">🗑️ إفراغ السلة</button>
-      <button id="checkout-pay" class="btn-pay">💳 إتمام الدفع</button>
-    </div>
-  </section>
-
-  <!-- ====== MODAL: استمارة المنتج (تظهر لما يضغط على "اختر هذا العطر") ====== -->
-  <div id="perfume-modal" class="modal hidden">
-    <div class="modal-content animate-modal">
-      <span class="close-btn" id="modal-close">&times;</span>
-      <h3>تفاصيل الاستخدام للعطر: <span id="selected-product">---</span></h3>
-      <form id="perfume-form">
-        <label>اختر نوع الاستخدام:</label>
-        <select id="usage-type" required>
-          <option value="">--اختر--</option>
-          <option value="نهار">نهار</option>
-          <option value="ليل">ليل</option>
-          <option value="مناسبة خاصة">مناسبة خاصة</option>
-        </select>
-
-        <label>اختر الموسم:</label>
-        <select id="season-type" required>
-          <option value="">--اختر--</option>
-          <option value="صيفي">صيفي</option>
-          <option value="شتوي">شتوي</option>
-        </select>
-
-        <label>ذوقك المفضل:</label>
-        <select id="style-type" required>
-          <option value="">--اختر--</option>
-          <option value="زهري">زهري</option>
-          <option value="خشبي">خشبي</option>
-          <option value="شرقي">شرقي</option>
-          <option value="فواكه">فواكه</option>
-        </select>
-
-        <label>تقييمك (1-5):</label>
-        <input type="number" id="rating" min="1" max="5" required />
-
-        <button type="submit" class="btn btn-primary">إضافة إلى السلة</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- ====== PAYMENT MODAL ====== -->
-  <div id="payment-modal" class="payment-modal">
-    <div class="payment-content">
-      <h3>اختر طريقة الدفع</h3>
-      <form id="payment-form">
-        <label><input type="radio" name="payment" value="credit" checked> بطاقة بنكية</label><br>
-        <label><input type="radio" name="payment" value="paypal"> PayPal</label><br>
-        <label><input type="radio" name="payment" value="cash"> عند الاستلام</label><br>
-        <button type="submit" class="btn-confirm">تأكيد الدفع</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- ====== THANK YOU ====== -->
-  <div id="thank-you" class="thank-you" style="display: none;">
-    <h2>🎉 شكراً لثقتك بمتجر عبير الخلود!</h2>
-    <p>نتمنى أن تنال عطورتنا إعجابك وترافقك في أجمل لحظاتك ✨</p>
-  </div>
-  <!-- 🌟 Footer -->
+  <!-- 🔹 الفوتر -->
+  <!-- 🔹 الفوتر -->
 <footer class="footer">
-  <div class="footer-container">
-
-    <!-- 👑 لوجو + وصف -->
-    <div class="footer-about fade-in-up">
-      <h2 class="logo">عبير الخلود</h2>
-      <p>
-        متجر العطور الأول الذي يجمع بين الفخامة والذوق الرفيع ✨  
-        استمتع بعطورنا المختارة بعناية لترافقك في كل لحظة.
-      </p>
+  <div class="container footer-container">
+    
+    <!-- القسم الأول: اللوجو -->
+    <div class="footer-logo">
+      <h2>🌸 عبير الخلود</h2>
+      <p>رحلة من الروائح الشرقية والعالمية الفاخرة</p>
     </div>
 
-    <!-- 🔗 روابط سريعة -->
-    <div class="footer-links fade-in-up">
+    <!-- القسم الثاني: روابط سريعة -->
+    <div class="footer-links">
       <h3>روابط سريعة</h3>
       <ul>
-        <li><a href="#home">🏠 الرئيسية</a></li>
-        <li><a href="#products">🛍️ منتجاتنا</a></li>
-        <li><a href="#offers">🔥 العروض</a></li>
-        <li><a href="#contact">📩 تواصل معنا</a></li>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#products">منتجاتنا</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
       </ul>
     </div>
 
-    <!-- 📞 تواصل -->
-    <div class="footer-contact fade-in-up">
-      <h3>تواصل معنا</h3>
-      <p>📍 القاهرة – مصر</p>
-      <p>📞 010224475512</p>
-      <p>📧 info@abeer.com</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-      </div>
+    <!-- القسم الثالث: وسائل التواصل -->
+    <div class="footer-social">
+      <h3>تابعنا</h3>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
     </div>
-
   </div>
 
-  <!-- حقوق -->
   <div class="footer-bottom">
     <p>© 2025 عبير الخلود. جميع الحقوق محفوظة.</p>
   </div>
 </footer>
-
 
   <script src="script.js"></script>
 </body>

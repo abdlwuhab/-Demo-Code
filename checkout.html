@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إتمام الدفع</title>
+  <link rel="stylesheet" href="stely.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">عبير الخلود</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">الرئيسية</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="checkout-section">
+  <h2>إتمام عملية الشراء</h2>
+  <form id="checkout-form">
+    <label for="fullname">الاسم الكامل</label>
+    <input type="text" id="fullname" required>
+
+    <label for="email">البريد الإلكتروني</label>
+    <input type="email" id="email" required>
+
+    <label for="address">العنوان</label>
+    <input type="text" id="address" required>
+
+    <label for="payment-method">طريقة الدفع</label>
+    <select id="payment-method">
+      <option>بطاقة بنكية</option>
+      <option>PayPal</option>
+      <option>عند الاستلام</option>
+    </select>
+
+    <button type="submit" class="btn">تأكيد الدفع</button>
+  </form>
+</section>
+<!-- 🔹 الفوتر -->
+<footer class="footer">
+  <div class="container footer-container">
+    
+    <!-- القسم الأول: اللوجو -->
+    <div class="footer-logo">
+      <h2>🌸 عبير الخلود</h2>
+      <p>رحلة من الروائح الشرقية والعالمية الفاخرة</p>
+    </div>
+
+    <!-- القسم الثاني: روابط سريعة -->
+    <div class="footer-links">
+      <h3>روابط سريعة</h3>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#products">منتجاتنا</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </div>
+
+    <!-- القسم الثالث: وسائل التواصل -->
+    <div class="footer-social">
+      <h3>تابعنا</h3>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 عبير الخلود. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
